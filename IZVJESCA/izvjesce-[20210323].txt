@@ -1,0 +1,7 @@
+3. Tjedan nastave 15.3 - 21.3
+	
+	Zapoct razvoj Android aplikacije i backenda potrebnog za rad s Firebase Cloud Messaging.
+	Android aplikacija povezana s Firebace Console-om.
+	Na backendu uspostavljen endpoint za slanje post zahtjeva.
+
+	Plan za iduci tjedan: Nastavak razvoja Android aplikacije i backenda
