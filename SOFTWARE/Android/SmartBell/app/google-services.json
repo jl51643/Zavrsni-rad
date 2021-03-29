@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "735073149923",
+    "project_id": "smart-bell-e43bd",
+    "storage_bucket": "smart-bell-e43bd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:735073149923:android:2a94e3f89a15f9fc0636d6",
+        "android_client_info": {
+          "package_name": "hr.fer.zr.smartbell"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "735073149923-cuebg5kegjc93jc30iogvju98sa9vd9n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB404l293R6JRM7EMLSOdeMlOXc7Vco3Fk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "735073149923-cuebg5kegjc93jc30iogvju98sa9vd9n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
