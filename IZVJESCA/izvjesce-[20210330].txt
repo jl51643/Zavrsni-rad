@@ -1,0 +1,6 @@
+4. Tjedan nastave 22.3 - 28.3
+	
+	Upoznavanje s Arduinom i isprobavanje osnovnih primjera
+	Dodan prikaz kamere u Android aplikaciju
+
+	Plan za iduci tjedan: Nastavak razvoja Android aplikacije i backenda, pokušati poslati Http zahtjeve na backend
