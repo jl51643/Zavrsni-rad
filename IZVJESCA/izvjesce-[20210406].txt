@@ -1,0 +1,5 @@
+5. Tjedan nastave 29.3 - 4.4
+	
+	Slanje http POST request-a s Arduina na backend na prititsak gumba.
+
+	Plan za iduci tjedan: Spremanje tokena potrebnih za FCM u bazu podataka i rad na korisnickom sucelju Android aplikacije
