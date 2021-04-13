@@ -1,0 +1,5 @@
+6. Tjedan nastave 5.4 - 11.4
+	
+	Uredeno korisnicko sucelje Android aplikacije i omoguceno ponovno dohvacanje slike s kamere
+
+	Plan za iduci tjedan: Spremanje tokena potrebnih za FCM u bazu podataka i prouciti druge tehnike slanja obavijesti putem FCM-a
