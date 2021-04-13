@@ -9,7 +9,7 @@
 #include <TinkerKit.h>
 #include <SPI.h>
 
-IPAddress server(192,168,1,16); 
+IPAddress server(192,168,137,1); 
 YunClient client;
 TKButton button(I0);
 
@@ -41,8 +41,9 @@ void loop()
 {
 
   while(!button.pressed()){}
+  client.connect(server, 8080);
   client.println("POST /notification/token HTTP/1.1");
-  client.println("Host:901972c03a46.ngrok.io");
+  client.println("Host: 7c81dff8cd0d.ngrok.io");
   client.println("Content-Type: application/json");
   client.print("Content-length: ");
   client.println(parametri.length());
