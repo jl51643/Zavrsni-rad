@@ -2,4 +2,5 @@
 	
 	Uredeno korisnicko sucelje Android aplikacije i omoguceno ponovno dohvacanje slike s kamere
 
-	Plan za iduci tjedan: Spremanje tokena potrebnih za FCM u bazu podataka i prouciti druge tehnike slanja obavijesti putem FCM-a
+	Plan za iduci tjedan: Spremanje tokena potrebnih za FCM u bazu podataka i prouciti druge tehnike slanja obavijesti putem FCM-a.
+				Prezentacija trenutnog stanja.
