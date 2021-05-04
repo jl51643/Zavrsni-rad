@@ -1,9 +1,10 @@
-package hr.fer.zr.smartbell
+package hr.fer.zr.smartbell.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
+import hr.fer.zr.smartbell.R
 
 class WelcomeActivity : AppCompatActivity() {
 
