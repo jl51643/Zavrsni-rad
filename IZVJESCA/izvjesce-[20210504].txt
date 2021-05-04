@@ -1,0 +1,6 @@
+7. Tjedan nastave 12.4 - 18.4
+	
+	Ureden izgled push notifikacije
+
+	Plan za iduci tjedan: Uspostava baze podataka za FCM tokene
+				

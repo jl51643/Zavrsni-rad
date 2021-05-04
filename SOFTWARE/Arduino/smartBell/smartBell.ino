@@ -15,8 +15,8 @@ TKButton button(I0);
 
 String parametri =
   "{"
-    "\"title\": \"Put the push notification title here\","
-    "\"message\": \"Put here push notification body here\","
+    "\"title\": \"Someone has rung your doorbell\","
+    "\"message\": \"Go check it out\","
     "\"token\": \"fe5Q-nBjTo273aSdpRRsQg:APA91bFsXRUcPTTkBdP-09EWQ77v4nv43DZEbmaU2RScTLXcxUjN1eIXVoDk-9f-Swysg5vMBfDIDCS35jpy-UthzqhP9IIopnZUKepxmdKel_hD-pjIBtKAPxPWoGFbsBi40brbaR2W\""
   "}";
 
@@ -43,7 +43,7 @@ void loop()
   while(!button.pressed()){}
   client.connect(server, 8080);
   client.println("POST /notification/token HTTP/1.1");
-  client.println("Host: 7c81dff8cd0d.ngrok.io");
+  client.println("Host: faefa8a8e7a0.ngrok.io");
   client.println("Content-Type: application/json");
   client.print("Content-length: ");
   client.println(parametri.length());
@@ -55,7 +55,7 @@ void loop()
   
   if (client.available()) {
     char c = client.read();
-    Serial.print(c); 
+    Serial.print(c);
   }
   /*
   if (!client.connected()) {
