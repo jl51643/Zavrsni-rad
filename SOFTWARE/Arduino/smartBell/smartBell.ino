@@ -1,3 +1,5 @@
+#include <PubSubClient.h>
+
 #include <Bridge.h>
 #include <Console.h>
 #include <FileIO.h>
@@ -9,9 +11,47 @@
 #include <TinkerKit.h>
 #include <SPI.h>
 
-IPAddress server(192,168,137,1); 
-YunClient client;
+//IPAddress server(192,168,137,1);
+IPAddress server(10,1,217,95); 
+YunClient yunClient;
 TKButton button(I0);
+
+PubSubClient client(yunClient);
+
+const char* brokerUser = "mqtt-user";
+const char* brokerPass = "12345678";
+
+
+void callback(char* topic, byte* payload, unsigned int length) {
+  Serial.print("Message arrived [");
+  Serial.print(topic);
+  Serial.print("] ");
+  for (int i=0;i<length;i++) {
+    Serial.print((char)payload[i]);
+  }
+  Serial.println();
+}
+
+void reconnect() {
+  // Loop until we're reconnected
+  while (!client.connected()) {
+    Serial.print("Attempting MQTT connection...");
+    // Attempt to connect
+    if (client.connect("arduinoClient", brokerUser, brokerPass)) {
+      Serial.println("connected");
+      // Once connected, publish an announcement...
+      client.publish("/smartBell","hello world");
+      // ... and resubscribe
+      client.subscribe("inTopic");
+    } else {
+      Serial.print("failed, rc=");
+      Serial.print(client.state());
+      Serial.println(" try again in 5 seconds");
+      // Wait 5 seconds before retrying
+      delay(5000);
+    }
+  }
+}
 
 String parametri =
   "{"
@@ -27,6 +67,7 @@ void setup()
   
   delay(2500);
   Serial.println("connecting...");
+  /*
   if (client.connect(server, 8080))
   {
     Serial.println("connected");
@@ -36,10 +77,24 @@ else
     {
     Serial.println("connection failed");
     }
+
+  */
+
+  client.setServer(server, 1883);
+  client.setCallback(callback);
 }
 void loop()
 {
+  while(!button.pressed()){}
+  client.connect("arduinoClient", brokerUser, brokerPass);
+  client.publish("/smartBell","hello world");
+  /*reconnect();*/
+  /*if (!client.connected()) {
+    reconnect();
+  }
+  client.loop();*/
 
+/*
   while(!button.pressed()){}
   client.connect(server, 8080);
   client.println("POST /notification/token HTTP/1.1");
@@ -57,6 +112,9 @@ void loop()
     char c = client.read();
     Serial.print(c);
   }
+  */
+
+  
   /*
   if (!client.connected()) {
     Serial.println();

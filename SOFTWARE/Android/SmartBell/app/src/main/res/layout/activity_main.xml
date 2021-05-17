@@ -9,17 +9,17 @@
 
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/recyclerCameraIV"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@id/reload_button"
+        app:layout_constraintBottom_toTopOf="@id/recyclerReloadButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/security_cam" />
 
     <Button
-        android:id="@+id/reload_button"
+        android:id="@+id/recyclerReloadButton"
         android:layout_width="315dp"
         android:layout_height="67dp"
         android:layout_marginStart="24dp"
@@ -31,5 +31,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imageView" />
+        app:layout_constraintTop_toBottomOf="@id/recyclerCameraIV" />
 </androidx.constraintlayout.widget.ConstraintLayout>
