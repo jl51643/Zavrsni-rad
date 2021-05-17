@@ -1,6 +1,6 @@
 8. Tjedan nastave 3.5 - 9.5
 	
-	Istrazivanje Home assittant sustava
+	Istrazivanje Home assistant sustava
 
-	Plan za iduci tjedan: Refaktoriranje koda i saljanje obavijesti na home assitant pomocu backenda
+	Plan za iduci tjedan: Refaktoriranje koda i saljanje obavijesti na home assistant pomocu backenda
 				
