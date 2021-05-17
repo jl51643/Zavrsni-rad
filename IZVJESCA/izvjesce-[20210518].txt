@@ -1,0 +1,10 @@
+9. Tjedan nastave 10.5 - 16.5
+	
+	Postavljanje arduina kao MQTT okidac za automatizirano slanje http POST requesta s Home assistant na backend.
+	Objavljinvanje push obavijesti na odredene teme.
+	Pretplacivanje android aplikacije na oderdene teme za primanje objavljenih push obavijesti.
+	Uspostavljena baza podataka u android aplikaciji za spremanje informacija o temama i kamerama.
+	Nadogradnja koriscnickog sucelja android aplikacije.   
+
+	Plan za iduci tjedan: Pisanje zavrsnog rada.
+				
