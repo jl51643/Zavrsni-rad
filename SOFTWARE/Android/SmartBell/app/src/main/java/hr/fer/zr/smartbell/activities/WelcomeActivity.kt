@@ -4,20 +4,30 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
+import android.widget.Toast
+import com.google.firebase.messaging.FirebaseMessaging
 import hr.fer.zr.smartbell.R
 
 class WelcomeActivity : AppCompatActivity() {
 
-    private lateinit var imageView: ImageView
+    private lateinit var houseImageView: ImageView
+    private lateinit var settingsImageView: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_welcome)
 
-        imageView = findViewById(R.id.welcome_iv)
-        imageView.setOnClickListener {
+        houseImageView = findViewById(R.id.welcome_iv)
+        houseImageView.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
+
+        settingsImageView = findViewById(R.id.manageCamerasIV)
+        settingsImageView.setOnClickListener {
+            val intent = Intent(this, SubscribeToTopicActivity::class.java)
+            startActivity(intent)
+        }
     }
+
 }
