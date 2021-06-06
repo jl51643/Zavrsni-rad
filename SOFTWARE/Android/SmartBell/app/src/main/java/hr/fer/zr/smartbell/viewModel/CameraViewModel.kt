@@ -25,7 +25,6 @@ class CameraViewModel(private val databaseHandler: DatabaseHandler) : ViewModel(
 
     fun updateSubscription(camera: CameraModel) : Int {
         val success = databaseHandler.updateSubscription(camera)
-        //getCameras()
         return success
     }
 

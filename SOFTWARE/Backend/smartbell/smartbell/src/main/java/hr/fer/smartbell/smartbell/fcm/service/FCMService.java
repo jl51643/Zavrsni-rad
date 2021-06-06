@@ -29,7 +29,8 @@ public class FCMService {
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         String jsonOutput = gson.toJson(message);
         String response = sendAndGetResponse(message);
-        logger.info("Sent message with data. Topic: " + request.getTopic() + ", " + response+ " msg "+jsonOutput);
+        logger.info("Sent message with data. Topic: "
+                + request.getTopic() + ", " + response + " msg " + jsonOutput);
     }
     public void sendMessageWithoutData(PushNotificationRequest request)
             throws InterruptedException, ExecutionException {

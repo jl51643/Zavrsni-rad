@@ -14,7 +14,7 @@ import hr.fer.zr.smartbell.database.DatabaseHandler
 import hr.fer.zr.smartbell.viewModel.CameraViewModel
 import hr.fer.zr.smartbell.viewModel.factory.CameraViewModelFactory
 
-class MainActivity : AppCompatActivity() {
+class CameraViewActivity : AppCompatActivity() {
 
     lateinit var cameraListAdapter: CameraListAdapter
     lateinit var viewModel: CameraViewModel

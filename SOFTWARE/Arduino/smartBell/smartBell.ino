@@ -2,6 +2,8 @@
 #include <YunClient.h>
 #include <TinkerKit.h>
 
+#define MQTT_PORT 1883
+
 IPAddress server(10,1,217,95); 
 YunClient yunClient;
 TKButton button(I0);
@@ -19,11 +21,11 @@ void setup()
   delay(2500);
   Serial.println("connecting...");
 
-  client.setServer(server, 1883);
+  client.setServer(server, MQTT_PORT);
 }
 void loop()
 {
   while(!button.pressed()){}
   while(!client.connect("arduinoClient", brokerUser, brokerPass)){}
-  client.publish("/smartBell","doorbel");
+  client.publish("/smartBell","doorbell");
 }

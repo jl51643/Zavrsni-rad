@@ -4,8 +4,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
-import android.widget.Toast
-import com.google.firebase.messaging.FirebaseMessaging
 import hr.fer.zr.smartbell.R
 
 class WelcomeActivity : AppCompatActivity() {
@@ -19,7 +17,7 @@ class WelcomeActivity : AppCompatActivity() {
 
         houseImageView = findViewById(R.id.welcome_iv)
         houseImageView.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, CameraViewActivity::class.java)
             startActivity(intent)
         }
 

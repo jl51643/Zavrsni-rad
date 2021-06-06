@@ -1,13 +1,12 @@
 package hr.fer.smartbell.smartbell.fcm.service;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import hr.fer.smartbell.smartbell.fcm.model.PushNotificationRequest;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
+
+import java.util.HashMap;
+import java.util.Map;
 
 @Service
 public class PushNotificationService {
@@ -41,7 +40,6 @@ public class PushNotificationService {
         Map<String, String> pushData = new HashMap<>();
         pushData.put("messageId", "msgid");
         pushData.put("text", "txt");
-        pushData.put("user", "pankaj singh");
         return pushData;
     }
 }

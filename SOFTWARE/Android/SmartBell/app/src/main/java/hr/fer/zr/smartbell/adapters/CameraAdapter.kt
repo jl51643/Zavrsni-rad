@@ -20,6 +20,7 @@ class CameraAdapter(cameraViewModel: CameraViewModel) : RecyclerView.Adapter<Cam
     private var cameraViewModel : CameraViewModel = cameraViewModel
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+
         private var cameraId: TextView? = null
         private var subscribedSwitch: SwitchCompat? = null
         private var deleteCamera: ImageView? = null
@@ -47,7 +48,6 @@ class CameraAdapter(cameraViewModel: CameraViewModel) : RecyclerView.Adapter<Cam
         val context = parent.context
         val inflater = LayoutInflater.from(context)
         val cameraListElement = inflater.inflate(R.layout.camera_element_layout, parent, false)
-        //val listOfCameras = parent.findViewById<RecyclerView>(R.id.listOfCameras)
         val cameraId = cameraListElement.findViewById<TextView>(R.id.camraIdTV)
         val subscribedSwitch = cameraListElement.findViewById<SwitchCompat>(R.id.switchSubscription)
         val deleteCamera = cameraListElement.findViewById<ImageView>(R.id.binImage)
@@ -76,9 +76,6 @@ class CameraAdapter(cameraViewModel: CameraViewModel) : RecyclerView.Adapter<Cam
         }
 
         return ViewHolder(cameraListElement)
-        /*return ViewHolder(
-            LayoutInflater.from(parent.context).inflate(R.layout.camera_element_layout, parent, false)
-        )*/
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
