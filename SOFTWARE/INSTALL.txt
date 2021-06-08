@@ -1,0 +1,8 @@
+Upute ia instalaciju programske podrske za pametno zvono: 
+	stranica 42.
+Upute za instalaciju i konfiguraciju instance Home Assistant platforme:
+	stranica 42.
+Upute za instalaciju programske podrske posluzitelja:
+	stranica 43.
+Upute za instalaciju Android aplikacije:
+	stranica 43. 
